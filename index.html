@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:url" content="https://linhagem.joaopaliteiro.com/">
+<meta property="og:image" content="https://linhagem.joaopaliteiro.com/capa-v3.png"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://linhagem.joaopaliteiro.com/capa-v3.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>NÓS SOMOS · Linhagem Divina</title>
+<meta name="description" content="NÓS SOMOS · Linhagem Divina — Curar a Família, honrar quem partiu, abençoar quem vem. Curso de 12 horas com João Carlos Paliteiro, BEYOND. 29 out, 6 nov e 14 nov, online via Zoom.">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="NÓS SOMOS · Linhagem Divina">
+<meta property="og:description" content="Eu e eles? Não. Nós. Nós somos uma família. 29 out · 6 nov · 14 nov · Zoom.">
+<meta name="theme-color" content="#2E2454">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@500;600&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: par estético da Inteireza Divina (mesmo esqueleto de curso BEYOND: creme, cartões brancos, cabeçalhos centrados).
+   A cor própria vem das três linhagens: rosa (os que vieram antes), sálvia (os que caminham connosco), azul-céu (os que virão),
+   unidas pelo dourado da Linhagem Divina. Single look por escolha, como a Inteireza. */
+:root{
+  --cream:#FBF6EC; --cream-deep:#F3EAD3; --card:#FFFFFF;
+  --ink:#2A2018; --ink-soft:#5f5446;
+  --indigo:#2E2454; --indigo-soft:#4A3B7A;
+  --gold:#C9A063; --gold-deep:#8a6a2f;
+  --rose:#d4868a; --sage:#6f9e78; --sky:#6e9fc9;
+  --line:#E6D9BE; --night:#2E2454; --night-ink:#f2eefb;
+  --shadow:0 16px 40px rgba(120,90,40,.12);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --caps:"Cinzel",Georgia,serif;
+  --sans:"Jost","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.65;background-color:var(--cream);
+  background-image:
+    radial-gradient(ellipse 900px 520px at 10% -8%, rgba(212,134,138,.12), transparent 60%),
+    radial-gradient(ellipse 800px 600px at 100% 14%, rgba(110,159,201,.10), transparent 55%),
+    radial-gradient(ellipse 1000px 700px at 50% 115%, rgba(111,158,120,.12), transparent 60%),
+    linear-gradient(180deg,var(--cream),#FEFCF6 30%,var(--cream) 70%,var(--cream-deep));}
+.wrap{max-width:900px;margin:0 auto;padding-left:max(22px, env(safe-area-inset-left, 0px));padding-right:max(22px, env(safe-area-inset-right, 0px));padding-block:28px 40px}
+a{color:var(--indigo)}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.eyebrow{font-family:var(--caps);font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;justify-content:center;gap:10px;text-align:center}
+.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
+
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:10px;align-items:center;margin-top:8px}
+.hero>div{min-width:0}
+.logo{width:200px;height:auto;display:block;margin:0 0 30px}
+.badge{display:inline-block;font-family:var(--caps);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo);border:1px solid #e3cfd1;border-radius:999px;padding:8px 18px;background:rgba(255,255,255,.75)}
+.nos{font-family:var(--caps);font-weight:600;letter-spacing:.16em;font-size:clamp(1.9rem,5.2vw,3rem);line-height:1.3;padding-top:.12em;margin:22px 0 0;background:linear-gradient(100deg,var(--gold-deep),var(--gold) 50%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(3rem,8.5vw,5rem);line-height:1.02;margin:6px 0 0;
+  background:linear-gradient(100deg,var(--indigo) 10%,#b0616a 40%,#4f8a5c 65%,#4d7fae 90%);-webkit-background-clip:text;background-clip:text;color:transparent;text-wrap:balance}
+.subtitle{font-family:var(--serif);font-weight:600;font-size:clamp(1.4rem,3.8vw,1.8rem);line-height:1.25;color:var(--indigo);margin:12px 0 0;text-wrap:balance}
+.lema{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,3.4vw,1.7rem);line-height:1.35;color:var(--ink-soft);margin:16px 0 0;max-width:30ch}
+.when{display:grid;gap:4px;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 22px;box-shadow:var(--shadow);max-width:430px}
+.when b{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--indigo);line-height:1.25}
+.when small{font-size:16px;color:var(--ink-soft)}
+.hero-btn{margin-top:24px}
+.tree{width:100%;max-width:400px;height:auto;justify-self:center;display:block}
+@media (prefers-reduced-motion:no-preference){.tree .pulse{animation:breathe 7s ease-in-out infinite;transform-origin:center;transform-box:fill-box}.tree .pulse.d2{animation-delay:-2.3s}.tree .pulse.d3{animation-delay:-4.6s}}
+@keyframes breathe{50%{transform:scale(1.08)}}
+@media (max-width:700px){.hero{grid-template-columns:1fr}.tree{max-width:240px;margin-top:6px}}
+
+section{margin-top:64px}
+.section-head{text-align:center;margin-bottom:26px}
+.section-head .eyebrow{margin-bottom:10px}
+h2{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.7rem,4.4vw,2.3rem);line-height:1.2;text-align:center;margin:0;color:var(--indigo);text-wrap:balance}
+.note{text-align:center;font-size:16px;color:var(--gold-deep);margin:8px auto 0;max-width:60ch}
+.lead{max-width:640px;margin:0 auto 14px;text-align:center;color:var(--ink-soft)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px clamp(20px,4vw,40px);box-shadow:var(--shadow)}
+.card p{margin:0 0 14px;color:var(--ink-soft)}
+.card p:last-child{margin-bottom:0}
+.card strong{color:var(--gold-deep);font-weight:600}
+.verse{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1.35;color:var(--indigo)!important}
+
+.teaching{max-width:640px;margin:22px auto 0;border-left:3px solid;border-image:linear-gradient(180deg,var(--rose),var(--sage),var(--sky)) 1;padding:6px 0 6px 24px}
+.teaching p{font-family:var(--serif);font-size:1.45rem;line-height:1.4;margin:0 0 10px;color:var(--indigo)}
+.teaching cite{display:block;font-style:normal;font-size:15px;color:var(--ink-soft)}
+
+/* Programa: três encontros, uma linha do tempo real (antes, agora, depois) */
+.encontros{display:grid;gap:18px}
+.enc{display:grid;grid-template-columns:150px 1fr;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.enc>div{min-width:0}
+.enc .date{border-right:1px solid var(--line);padding-right:16px}
+.enc .date .d{font-family:var(--serif);font-style:italic;font-size:1.7rem;line-height:1.1;color:var(--c)}
+.enc .date .t{font-size:15px;color:var(--ink-soft);margin-top:4px}
+.enc .date .k{font-family:var(--caps);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:6px}
+.enc h3{font-family:var(--caps);font-size:15.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);margin:0 0 4px}
+.enc .sub{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--c);margin:0 0 10px}
+.enc ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:16.5px}
+.enc li{margin-bottom:6px}
+.r{--c:#b0616a}.g{--c:#4f8a5c}.s{--c:#4d7fae}
+@media (max-width:640px){.enc{grid-template-columns:1fr}.enc .date{border-right:0;border-bottom:1px solid var(--line);padding:0 0 12px}}
+.practices{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.practices h3{font-family:var(--caps);font-size:15.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);margin:0 0 12px}
+.practices ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:16.5px;columns:2;column-gap:30px}
+.practices li{margin-bottom:7px;break-inside:avoid}
+@media (max-width:640px){.practices ul{columns:1}}
+.todo{display:inline-block;border:1.5px dashed var(--gold);border-radius:10px;padding:2px 10px;color:var(--gold-deep);font-size:15px}
+
+.bridge{background:linear-gradient(140deg,#fff6f2,#fffdf7 55%,#f2f7fb);border:1px solid #E4C98A;border-radius:20px;padding:32px clamp(20px,4vw,40px);box-shadow:var(--shadow)}
+.bridge p{color:var(--ink-soft);margin:0 0 14px}
+.bridge .verse{text-align:center;margin:18px 0 0}
+.steps{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:4px 0 18px}
+.steps>div{min-width:0;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.steps .k{font-family:var(--caps);letter-spacing:.14em;font-size:1.1rem;color:var(--gold-deep)}
+.steps .v{font-size:15.5px;color:var(--ink-soft)}
+.steps .arrow{font-family:var(--serif);font-size:2rem;color:var(--gold);background:none;border:0;padding:0}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.steps .arrow{transform:rotate(90deg)}}
+
+.val{display:grid;grid-template-columns:1fr 1fr;gap:22px 30px;max-width:760px;margin:0 auto}
+.val>div{min-width:0}
+.val h3{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--indigo);margin:0 0 2px}
+.val p{margin:0;font-size:16.5px;color:var(--ink-soft)}
+@media (max-width:640px){.val{grid-template-columns:1fr}}
+
+.luto{background:var(--night);color:var(--night-ink);border-radius:20px;padding:32px clamp(20px,4vw,40px)}
+.luto .eyebrow{color:#f0c9cb;justify-content:flex-start}
+.luto .eyebrow::before{display:none}
+.luto h2{color:var(--night-ink);text-align:left;margin:10px 0 14px}
+.luto p{margin:0 0 12px}
+.luto ul{padding:0;list-style:none;display:grid;gap:8px;margin:14px 0}
+.luto li{padding-left:24px;position:relative}
+.luto li::before{content:"✦";position:absolute;left:0;color:#f0c9cb;font-size:13px;top:4px}
+.luto .small{font-size:15.5px;opacity:.85}
+
+table.schedule{width:100%;border-collapse:collapse}
+table.schedule th{font-family:var(--caps);font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);text-align:left;padding:0 10px 10px;border-bottom:1px solid var(--line);font-weight:500}
+table.schedule td{padding:13px 10px;border-bottom:1px solid var(--line);font-size:16.5px;vertical-align:top}
+table.schedule td.h{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--gold-deep)}
+.tbl{overflow-x:auto}
+.total-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.total-row .k{font-family:var(--caps);font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.total-row .v{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--indigo)}
+.format-line{text-align:center;margin:16px 0 0;font-size:16px;color:var(--ink-soft)}
+
+.ptitle{font-family:var(--caps);font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);text-align:center;margin:0}
+.pgroup{border:1px solid var(--line);border-radius:22px;padding:22px clamp(14px,3vw,24px) 26px;background:rgba(255,255,255,.5);margin-top:18px}
+.pgroup.combo{background:linear-gradient(140deg,#fff8ea,#fffdf7 55%,#f3f6fb);border-color:#E4C98A}
+.phead{text-align:center;margin-bottom:18px}
+.pbadge{display:inline-block;font-family:var(--caps);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#FFFDF7;background:var(--indigo);border-radius:999px;padding:5px 14px}
+.combo .pbadge{background:linear-gradient(100deg,var(--gold-deep),var(--gold))}
+.phead .ptitle{margin:10px 0 2px}
+.pref{margin:0;font-size:15.5px;color:var(--ink-soft)}
+.price-card .ref{font-size:16px;color:var(--ink-soft);margin-bottom:-2px}
+
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 16px;text-align:center;box-shadow:var(--shadow)}
+.price-card.featured{border-color:var(--gold);background:#FFFDF7;transform:translateY(-4px)}
+.price-card.expired{display:none}
+.price-card.later{background:rgba(255,255,255,.6);box-shadow:none}
+.price-card.later .amount{color:var(--indigo-soft)}
+.price-card.later .buy-btn{display:none}
+.price-card .next{display:none;font-family:var(--caps);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin-top:12px}
+.price-card.later .next{display:block}
+.price-card .tag{font-family:var(--caps);font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--indigo-soft);margin-bottom:8px}
+.price-card .amount{font-family:var(--serif);font-style:italic;font-size:2.4rem;color:var(--indigo);line-height:1.1;font-variant-numeric:tabular-nums}
+.price-card .save{font-size:16px;color:var(--gold-deep);margin-top:4px;font-weight:600}
+.price-card .until{font-size:15.5px;color:var(--ink-soft);margin-top:8px}
+.price-card .gift{font-size:14.5px;color:#b0616a;margin-top:8px;font-weight:500}
+.combo .price-card{border-top:4px solid var(--gold)}
+.combo-note{text-align:center;font-size:15.5px;color:var(--ink-soft);max-width:62ch;margin:12px auto 0}
+.buy-btn,.btn{display:inline-block;margin-top:16px;font-family:var(--sans);font-size:16px;font-weight:600;letter-spacing:.02em;color:#FFFDF7;background:linear-gradient(100deg,var(--indigo-soft),var(--indigo));padding:13px 26px;border-radius:999px;text-decoration:none;box-shadow:0 8px 22px rgba(46,36,84,.25)}
+.btn{font-size:17px;padding:16px 32px}
+.btn.ghost{background:var(--card);color:var(--indigo);border:1.5px solid var(--indigo);box-shadow:none}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid2>*{min-width:0}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}}
+.fine-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow)}
+.fine-card h4{font-family:var(--caps);font-size:14.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 8px}
+.fine-card p{margin:0 0 10px;font-size:16px;color:var(--ink-soft)}
+.fine-card a.link{font-weight:500}
+
+.bonus-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.bonus-list li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:17px;color:var(--ink-soft);box-shadow:var(--shadow)}
+.bonus-list li>span:last-child{min-width:0}
+.bonus-list .ic{font-family:var(--serif);font-style:italic;color:var(--gold-deep);font-size:1.25rem;line-height:1.2;flex-shrink:0}
+.bonus-list b{color:var(--indigo);font-weight:600}
+.familia{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;background:linear-gradient(120deg,#fff,#fbf3f3 60%,#f1f6f2);border:1px solid #e3cfd1;border-radius:18px;padding:24px clamp(18px,4vw,32px);margin-top:18px}
+.familia>div{min-width:0}
+.familia svg{width:84px;height:84px}
+.familia h3{font-family:var(--serif);font-style:italic;font-size:1.6rem;font-weight:500;color:var(--indigo);margin:0 0 4px}
+.familia p{margin:0 0 6px;color:var(--ink-soft);font-size:16.5px}
+@media (max-width:520px){.familia{grid-template-columns:1fr;text-align:center}.familia svg{margin:0 auto}}
+
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;max-width:700px;margin:0 auto;padding:0}
+@media (max-width:640px){.benefits{grid-template-columns:1fr}}
+.benefits li{list-style:none;color:var(--ink-soft);font-size:16.5px;padding-left:22px;position:relative}
+.benefits li::before{content:"✦";position:absolute;left:0;color:var(--gold);font-size:12px;top:5px}
+.mentors{text-align:center;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:1.9}
+.mentors b{color:var(--indigo);font-weight:500}
+
+details{border-top:1px solid var(--line);padding-block:16px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.4rem;color:var(--indigo);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold-deep)}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--ink-soft)}
+
+.cta{text-align:center;background:var(--cream-deep);border:1px solid #E4C98A;border-radius:22px;padding:44px clamp(20px,5vw,52px);box-shadow:var(--shadow)}
+.cta .lead{margin-bottom:6px}
+footer{margin-top:60px;text-align:center;padding-top:30px;border-top:1px solid var(--line)}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:1.45rem;color:var(--gold-deep)}
+footer .meta{margin:10px auto 0;font-size:15px;color:var(--ink-soft);max-width:560px}
+footer img{width:150px;height:auto;margin:22px auto 0;display:block}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div>
+      <img class="logo" src="logo-horizontal.png" alt="BEYOND — Academia de Evolução Divina" width="560" height="145">
+      <span class="badge">Curso · 2 noites e 1 sábado · 12 horas</span>
+      <p class="nos">NÓS SOMOS</p>
+      <h1>Linhagem Divina</h1>
+      <p class="subtitle">Curar a Família, honrar quem partiu, abençoar quem vem</p>
+      <p class="lema">Eu e eles? Não. Nós. Nós somos uma família.</p>
+      <div class="when">
+        <b>Qui 29 out · Sex 6 nov · Sáb 14 nov</b>
+        <small>Duas noites de 3h e um sábado de 6h · Online pelo Zoom</small>
+      </div>
+      <div class="hero-btn"><a class="btn" href="#precos">Garantir o meu lugar</a></div>
+    </div>
+    <!-- Roda da Família de Luz: a Presença ao centro, a família à volta (rosa, sálvia, azul-céu), em Unidade -->
+    <svg class="tree" viewBox="0 0 400 400" role="img" aria-label="Roda de luzes à volta de uma luz central">
+      <defs>
+        <radialGradient id="dc"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#f6e2b5"/><stop offset=".75" stop-color="#C9A063" stop-opacity=".5"/><stop offset="1" stop-color="#C9A063" stop-opacity="0"/></radialGradient>
+        <radialGradient id="dr"><stop offset="0" stop-color="#d4868a" stop-opacity=".9"/><stop offset="1" stop-color="#d4868a" stop-opacity="0"/></radialGradient>
+        <radialGradient id="dg"><stop offset="0" stop-color="#6f9e78" stop-opacity=".9"/><stop offset="1" stop-color="#6f9e78" stop-opacity="0"/></radialGradient>
+        <radialGradient id="ds"><stop offset="0" stop-color="#6e9fc9" stop-opacity=".9"/><stop offset="1" stop-color="#6e9fc9" stop-opacity="0"/></radialGradient>
+      </defs>
+      <circle cx="200" cy="200" r="130" fill="none" stroke="#C9A063" stroke-opacity=".45" stroke-width="1.2"/>
+      <circle cx="200" cy="200" r="80" fill="none" stroke="#C9A063" stroke-opacity=".3" stroke-width="1"/>
+      <g class="pulse"><circle cx="200" cy="70" r="30" fill="url(#dr)"/><circle cx="330" cy="200" r="30" fill="url(#dg)"/><circle cx="200" cy="330" r="30" fill="url(#ds)"/><circle cx="70" cy="200" r="30" fill="url(#dr)"/></g>
+      <g class="pulse d2"><circle cx="292" cy="108" r="30" fill="url(#ds)"/><circle cx="292" cy="292" r="30" fill="url(#dr)"/><circle cx="108" cy="292" r="30" fill="url(#dg)"/><circle cx="108" cy="108" r="30" fill="url(#ds)"/></g>
+      <circle cx="200" cy="200" r="78" fill="url(#dc)"/>
+    </svg>
+  </header>
+
+  <section id="convite">
+    <div class="card">
+      <p><strong>Ninguém chega sozinho a esta vida.</strong> Chegaste por uma mãe e por um pai, por avós que talvez não conheceste, por gerações que viveram, amaram, sofreram e prometeram coisas que ainda hoje ecoam em ti.</p>
+      <p>Há padrões que se repetem de geração em geração sem ninguém saber de onde vêm. Há palavras que ficaram por dizer a quem partiu. Há culpas que passam de pais para filhos, e de filhos para pais. E há uma saudade que não se cura com o tempo.</p>
+      <p>Neste curso olhamos para a família inteira: os que vieram antes, os que caminham connosco e os que virão. Começamos na véspera do Dia de Todos os Santos, quando o véu entre os mundos é mais fino, e o trabalho com quem partiu faz parte do Caminho.</p>
+      <p class="verse">A partir de ti, nasce uma nova linhagem.</p>
+    </div>
+  </section>
+
+  <section id="o-que-e">
+    <div class="section-head">
+      <div class="eyebrow">Um ensinamento que pedia mais tempo</div>
+      <h2>O que é a Linhagem Divina</h2>
+    </div>
+    <p class="lead">Na Aula de Evolução Divina <em>Pais Sagrados, Filhos Abençoados</em> disse que este tema pedia um ano e meio, e não uma hora e meia. Este curso nasce daí. Estamos ligados a três linhagens: a terrena, a cósmica e a Divina, que nos une a todos.</p>
+    <div class="teaching">
+      <p>Nós somos os antepassados das gerações futuras.</p>
+      <p>A partir de mim, dou à luz toda uma nova linhagem familiar.</p>
+      <p>Todas as almas são inocentes.</p>
+      <p>Amar e perdoar não significa que tenhamos de viver com essas pessoas.</p>
+      <cite>Aula de Evolução Divina · Pais Sagrados, Filhos Abençoados · 15 de agosto de 2024</cite>
+    </div>
+  </section>
+
+  <section id="ponte">
+    <div class="bridge">
+      <div class="eyebrow" style="margin-bottom:12px">Pilar EU SOU</div>
+      <h2 style="margin-bottom:18px">Primeiro voltas a ti. Depois curas o nós.</h2>
+      <div class="steps">
+        <div><div class="k">EU SOU</div><div class="v">Inteireza Divina · 24 out</div></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div><div class="k">NÓS SOMOS</div><div class="v">Linhagem Divina · 29 out a 14 nov</div></div>
+      </div>
+      <p>Quem está inteiro deixa de procurar no pai, na mãe ou nos filhos aquilo que lhe falta. E é a partir dessa inteireza que a família pode ser curada sem culpa e sem dívida.</p>
+      <p>Os dois cursos completam-se. Podes fazer só este, ou juntar a Inteireza Divina a um valor especial. <a href="https://inteireza.joaopaliteiro.com/" target="_blank" rel="noopener">Ver a página da Inteireza Divina</a>.</p>
+      <p class="verse">Duas metades não fazem um inteiro. Muitos inteiros fazem uma família.</p>
+    </div>
+  </section>
+
+  <section id="programa">
+    <div class="section-head">
+      <div class="eyebrow">Estrutura</div>
+      <h2>Programa Resumo</h2>
+      <p class="note">O curso é canalizado: o conteúdo exato revela-se no momento.</p>
+    </div>
+    <div class="encontros">
+      <div class="enc r">
+        <div class="date"><div class="k">1.ª noite</div><div class="d">Quinta, 29 out</div><div class="t">3 horas</div></div>
+        <div>
+          <h3>Os que vieram antes</h3>
+          <p class="sub">A linhagem terrena e quem partiu</p>
+          <ul>
+            <li>Honrar os antepassados sem carregar o que é deles</li>
+            <li>Libertação e ascensão de antepassados</li>
+            <li>Os que partiram: despedidas que ficaram por fazer</li>
+            <li>Trabalho de luto, como faço nas sessões Superando o Luto</li>
+            <li>A prática de honra e gratidão para os dias de Todos os Santos e de Finados</li>
+          </ul>
+        </div>
+      </div>
+      <div class="enc g">
+        <div class="date"><div class="k">2.ª noite</div><div class="d">Sexta, 6 nov</div><div class="t">3 horas</div></div>
+        <div>
+          <h3>Os que caminham connosco</h3>
+          <p class="sub">A família encarnada</p>
+          <ul>
+            <li>Pais e filhos: papéis que rodam de vida em vida</li>
+            <li>O casal e as famílias que se juntam pelo casamento</li>
+            <li>Sair da culpa e da vítima, para a frente e para trás</li>
+            <li>Amar e perdoar sem ter de conviver</li>
+          </ul>
+        </div>
+      </div>
+      <div class="enc s">
+        <div class="date"><div class="k">Sábado</div><div class="d">Sábado, 14 nov</div><div class="t">6 horas</div></div>
+        <div>
+          <h3>Os que virão</h3>
+          <p class="sub">A linhagem cósmica e a Linhagem Divina</p>
+          <ul>
+            <li>Padrões que atravessam gerações e como se cortam</li>
+            <li>Limpeza das matrizes familiares</li>
+            <li>As tuas linhagens cósmicas e angélicas, e os seres cósmicos da linhagem</li>
+            <li>Upgrade da Equipa de Evolução da Egrégora Familiar</li>
+            <li>Guardião da Presença Divina na tua família e na tua casa</li>
+            <li>Ser fonte de "água limpa" para as gerações futuras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="practices">
+      <h3>Práticas e Iniciações</h3>
+      <ul>
+        <li>Libertação de laços, contratos e padrões familiares</li>
+        <li>Cura da linhagem até à origem e limpeza das matrizes familiares</li>
+        <li>Honra, libertação e ascensão dos que partiram</li>
+        <li>Bênção das gerações futuras</li>
+        <li>Decretos da Linhagem Divina</li>
+        <li>Iniciações da Linhagem Divina</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="valencias">
+    <div class="section-head">
+      <div class="eyebrow">O que este curso trabalha</div>
+      <h2>O que se cura, se honra e se liberta</h2>
+    </div>
+    <div class="val">
+      <div><h3>Com quem partiu</h3><p>Saudade, despedidas por fazer, palavras por dizer. O amor não acaba quando o corpo parte.</p></div>
+      <div><h3>Com a mãe e o pai</h3><p>O que recebeste, o que te faltou, o que já podes devolver e o que podes agradecer.</p></div>
+      <div><h3>Com os filhos</h3><p>Pais sagrados, filhos abençoados. Tirar das costas a culpa do que não soubeste fazer.</p></div>
+      <div><h3>No casal</h3><p>Ninguém se casa só com uma pessoa: casa-se também com uma família.</p></div>
+      <div><h3>Nos padrões herdados</h3><p>Tristezas, conflitos, escassez e histórias que se repetem sem ninguém saber de onde vêm.</p></div>
+      <div><h3>Para quem vem</h3><p>Filhos, netos e gerações futuras recebem o que hoje limpas e abençoas.</p></div>
+    </div>
+  </section>
+
+  <section id="luto">
+    <div class="luto">
+      <div class="eyebrow">Se estás em luto</div>
+      <h2>Este curso também é para ti.</h2>
+      <p>Na primeira noite fazemos trabalho de luto, com o mesmo cuidado das sessões individuais Superando o Luto. Vamos honrar, libertar e pacificar quem partiu, e cuidar de quem ficou.</p>
+      <ul>
+        <li>dizer o que ficou por dizer;</li>
+        <li>soltar a culpa de quem fica;</li>
+        <li>transformar a dor em amor que continua;</li>
+        <li>sentir que quem partiu também segue o seu Caminho na Luz.</li>
+      </ul>
+      <p class="small">Não prometemos contactos nem mensagens de quem partiu. Este trabalho espiritual é complementar e não substitui o acompanhamento psicológico do luto.</p>
+    </div>
+  </section>
+
+  <section id="mentores">
+    <div class="section-head">
+      <div class="eyebrow">Chancela Espiritual</div>
+      <h2>Mentores de Luz Divina</h2>
+    </div>
+    <p class="mentors">
+      <b>Mãe Maria</b>, <b>Mestre Jesus Sananda</b>, <b>Mestre Saint Germain</b>, <b>Mestra Nada</b>, <b>Mestra Quan Yin</b>,
+      <b>Arcanjos Miguel, Rafael, Gabriel, Uriel e Ezequiel</b>, <b>Conselho Cármico</b>,
+      Anjos da Família, da Cura e da Libertação,
+      <b>Conselhos Cósmicos da União e do Amor</b>.
+    </p>
+  </section>
+
+  <section id="datas">
+    <div class="section-head">
+      <div class="eyebrow">Calendário</div>
+      <h2>Três encontros, três gerações</h2>
+    </div>
+    <div class="card">
+      <div class="tbl"><table class="schedule">
+        <thead><tr><th>Data</th><th>Lisboa</th><th>Brasília</th><th>Encontro</th></tr></thead>
+        <tbody>
+          <tr><td class="h">Qui · 29 out</td><td class="h">19h30–22h30</td><td class="h">16h30–19h30</td><td>Os que vieram antes</td></tr>
+          <tr><td class="h">Sex · 6 nov</td><td class="h">19h30–22h30</td><td class="h">16h30–19h30</td><td>Os que caminham connosco</td></tr>
+          <tr><td class="h">Sáb · 14 nov</td><td class="h">14h30–20h30</td><td class="h">11h30–17h30</td><td>Os que virão · Iniciações</td></tr>
+        </tbody>
+      </table></div>
+      <div class="total-row"><span class="k">29 out a 14 nov</span><span class="v">12 Horas</span></div>
+      <p class="format-line">Totalmente online via Zoom · Participa de qualquer parte do mundo · Sábado com duas pausas</p>
+    </div>
+  </section>
+
+
+  <section id="bonus">
+    <div class="section-head">
+      <div class="eyebrow">Oferta</div>
+      <h2>Bónus Incluídos</h2>
+    </div>
+    <ul class="bonus-list">
+      <li><span class="ic">✦</span><span>A gravação completa dos três encontros</span></li>
+      <li><span class="ic">✦</span><span>Manual da Linhagem Divina (PDF), com um resumo dos ensinamentos, das práticas e dos decretos do Curso</span></li>
+      <li><span class="ic">✦</span><span><b>Vale de 50%</b> numa sessão individual à tua escolha, Superando o Luto ou Família de Luz, válido 3 meses. Na Ação Rápida recebes os dois vales.</span></li>
+      <li><span class="ic">✦</span><span>Grupo de Chat de acompanhamento e integração na Comunidade de Alunos dos Mestres da Luz Divina</span></li>
+    </ul>
+    <div class="familia" id="familia">
+      <svg viewBox="0 0 84 84" aria-hidden="true">
+        <circle cx="28" cy="30" r="20" fill="#d4868a" fill-opacity=".45"/><circle cx="56" cy="30" r="20" fill="#6e9fc9" fill-opacity=".45"/><circle cx="42" cy="54" r="20" fill="#6f9e78" fill-opacity=".45"/><circle cx="42" cy="38" r="9" fill="#fff" fill-opacity=".9"/>
+      </svg>
+      <div>
+        <h3>Nova · Sessão Família de Luz</h3>
+        <p>Uma sessão individual de 2 horas para toda a tua família, a que está aqui e a que já partiu. Curamos a linhagem, os contratos e os laços, os padrões, crenças e programações, matrizes energéticas e muito mais, na mesma linha deste curso.</p>
+        <p>Valor normal: <b style="color:var(--indigo)">222€</b> · alunos do Curso NÓS SOMOS: 50% com o vale-bónus do Curso</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <div class="section-head">
+      <div class="eyebrow">Frutos</div>
+      <h2>O que Vais Receber</h2>
+    </div>
+    <ul class="benefits">
+      <li>Paz com quem partiu</li>
+      <li>Menos culpa como filho e como pai ou mãe</li>
+      <li>Libertação de padrões que se repetem na família</li>
+      <li>Laços e contratos familiares limpos e selados</li>
+      <li>Limpeza das matrizes familiares</li>
+      <li>Libertação e ascensão de antepassados e seres cósmicos da linhagem familiar</li>
+      <li>Upgrade da Equipa de Evolução da Egrégora Familiar</li>
+      <li>Reconexão com as tuas linhagens cósmicas</li>
+      <li>Ordem Divina na tua casa e nas tuas relações</li>
+      <li>Bênção para filhos, netos e gerações futuras</li>
+      <li>As Iniciações da Linhagem Divina</li>
+    </ul>
+  </section>
+  <section id="precos">
+    <div class="section-head">
+      <div class="eyebrow">Investimento</div>
+      <h2>Preços</h2>
+      <p class="note">Quanto mais cedo, menor o valor. Cada valor desaparece sozinho quando termina o seu prazo.</p>
+    </div>
+
+    <div class="pgroup">
+      <div class="phead"><span class="pbadge">1 curso</span><p class="ptitle">Só NÓS SOMOS · Linhagem Divina</p><p class="pref">12 horas · valor normal 255€</p></div>
+      <div class="pricing" data-grid="solo">
+        <div class="price-card" data-deadline="2026-10-23T23:59:59+01:00" data-price="177€" data-name="Ação Rápida">
+          <div class="tag">Ação Rápida</div><div class="amount">177€</div><div class="save">-30% · poupas 78€</div>
+          <div class="until">até sexta-feira · 23 de outubro</div>
+          <div class="gift">+ os dois vales de 50%</div>
+          <a class="buy-btn" href="#">Garantir o meu lugar</a><div class="next">Próximo valor</div>
+        </div>
+        <div class="price-card" data-deadline="2026-10-26T23:59:59+00:00" data-price="202€" data-name="Early Bird" data-from="de 24 a 26 de outubro">
+          <div class="tag">Early Bird</div><div class="amount">202€</div><div class="save">-20% · poupas 53€</div>
+          <div class="until">até segunda-feira · 26 de outubro</div>
+          <div class="gift">+ 1 vale de 50%</div>
+          <a class="buy-btn" href="#">Garantir o meu lugar</a><div class="next">Próximo valor</div>
+        </div>
+        <div class="price-card" data-deadline="2026-11-06T18:00:00+00:00" data-price="255€" data-name="Preço normal" data-from="a partir de 27 de outubro">
+          <div class="tag">Preço Normal</div><div class="amount">255€</div><div class="save">&nbsp;</div>
+          <div class="until">entradas até sexta, 6 de novembro</div>
+          <div class="gift">+ 1 vale de 50%</div>
+          <a class="buy-btn" href="#">Garantir o meu lugar</a><div class="next">Próximo valor</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pgroup combo">
+      <div class="phead"><span class="pbadge">2 cursos · combo</span><p class="ptitle">NÓS SOMOS + EU SOU · Inteireza Divina</p><p class="pref">18 horas · os dois a preço normal: <s>432€</s> · <a href="https://inteireza.joaopaliteiro.com/" target="_blank" rel="noopener">ver a Inteireza</a></p></div>
+      <div class="pricing" data-grid="combo">
+        <div class="price-card" data-deadline="2026-10-23T23:59:59+01:00" data-price="297€" data-name="Combo Ação Rápida">
+          <div class="tag">Ação Rápida</div><div class="ref"><s>432€</s></div><div class="amount">297€</div><div class="save">-31% · poupas 135€</div>
+          <div class="until">até sexta-feira · 23 de outubro</div>
+          <div class="gift">+ os dois vales de 50%</div>
+          <a class="buy-btn" href="#">Quero os dois cursos</a><div class="next">Próximo valor</div>
+        </div>
+        <div class="price-card" data-deadline="2026-10-26T23:59:59+00:00" data-price="322€" data-name="Combo Early Bird" data-from="de 24 a 26 de outubro">
+          <div class="tag">Early Bird</div><div class="ref"><s>432€</s></div><div class="amount">322€</div><div class="save">-25% · poupas 110€</div>
+          <div class="until">até segunda-feira · 26 de outubro</div>
+          <div class="gift">+ 1 vale de 50%</div>
+          <a class="buy-btn" href="#">Quero os dois cursos</a><div class="next">Próximo valor</div>
+        </div>
+        <div class="price-card" data-deadline="2026-11-06T18:00:00+00:00" data-price="344€" data-name="Combo Normal" data-from="a partir de 27 de outubro">
+          <div class="tag">Preço Normal</div><div class="ref"><s>432€</s></div><div class="amount">344€</div><div class="save">-20% · poupas 88€</div>
+          <div class="until">entradas até sexta, 6 de novembro</div>
+          <div class="gift">+ 1 vale de 50%</div>
+          <a class="buy-btn" href="#">Quero os dois cursos</a><div class="next">Próximo valor</div>
+        </div>
+      </div>
+      <p class="combo-note">A Inteireza Divina é ao vivo no sábado, 24 de outubro. Se juntares os dois cursos depois desse dia, recebes a gravação completa e os materiais da Inteireza. Quem entrar depois da 1.ª noite recebe a gravação dessa noite.</p>
+    </div>
+    <p class="closed-msg note" hidden>As inscrições para este curso estão encerradas.</p>
+
+    <div class="grid2" style="margin-top:24px">
+      <div class="fine-card">
+        <h4>Traz a tua família</h4>
+        <p>É um curso sobre a família: cada familiar ou pessoa que trouxeres paga metade do valor em vigor. Escreve-me pelo WhatsApp com os nomes e digo-te quanto é o valor final.</p>
+        <a class="link" data-duo href="#">Quero trazer a minha família</a>
+      </div>
+      <div class="fine-card">
+        <h4>Como pagar</h4>
+        <p>Podes pagar por MB WAY ou transferência bancária. Se precisares de pagar com cartão ou PayPal, diz-me e envio-te o link. Ao tocares no botão, abre-se uma conversa comigo no WhatsApp.</p>
+        <a class="link" data-other href="#">Pedir os dados de pagamento</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="quem">
+    <div class="section-head">
+      <div class="eyebrow">Quem conduz</div>
+      <h2>João Carlos Paliteiro</h2>
+    </div>
+    <div class="card">
+      <p>Ex-engenheiro e investigador científico, deixei a carreira académica para servir a Luz. Há mais de 22 anos que acompanho pessoas no seu Caminho, com mais de 16.000 atendimentos individuais e mais de mil cursos e aulas em vários países.</p>
+      <p>Sou criador do sistema Divine Presence Healing® e Divine Light Mentoring® e fundador da BEYOND — Academia de Evolução Divina. Trabalho como Canal dos Mestres Ascensionados e da Hierarquia da Luz Divina, com uma linguagem simples e estruturada. E sou pai, filho e esposo: este tema vive comigo todos os dias, em família! 🙏</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="section-head"><h2>Perguntas frequentes</h2></div>
+    <details><summary>Preciso de ter feito a Inteireza Divina ou outros cursos?</summary><p>Não. Este curso é aberto a todos. Quem fez a Inteireza encontra aqui o passo seguinte: do EU SOU para o NÓS SOMOS.</p></details>
+    <details><summary>Perdi alguém há pouco tempo. Este curso é para mim?</summary><p>Sim. A primeira noite inclui trabalho de luto, com todo o cuidado. Vens ao teu ritmo e podes participar em silêncio. Se precisares de um acompanhamento mais próximo, tens o vale de 50% numa sessão individual Superando o Luto.</p></details>
+    <details><summary>Tenho de falar da minha família?</summary><p>Não. Podes partilhar se te fizer sentido, mas o trabalho acontece em ti e na tua linhagem, com ou sem palavras.</p></details>
+    <details><summary>A minha família não acredita nestas coisas. Mesmo assim resulta?</summary><p>Trabalhamos a partir de ti. Ninguém precisa de saber nem de concordar. Quando um muda, o Campo da família muda com ele.</p></details>
+    <details><summary>E se não puder estar ao vivo?</summary><p>Recebes a gravação completa dos três encontros. A Cura e as Iniciações são transmitidas a todos os inscritos. Mas se puderes, vem ao vivo!</p></details>
+    <details><summary>Posso trazer familiares?</summary><p>Sim, e é muito bonito fazê-lo. Cada pessoa que trouxeres paga metade do valor em vigor.</p></details>
+    <details><summary>Como pago?</summary><p>Por MB WAY ou transferência bancária. Toca no botão do valor em vigor: abre-se uma conversa comigo no WhatsApp e envio-te os dados. Cartão ou PayPal, a pedido.</p></details>
+    <details><summary>Isto substitui tratamento médico ou psicológico?</summary><p>Não. É um trabalho espiritual, complementar. Não interrompas nenhum tratamento nem acompanhamento.</p></details>
+  </section>
+
+  <section id="cta">
+    <div class="cta">
+      <div class="eyebrow">O Próximo Passo</div>
+      <h2 style="margin:10px 0 22px">Vem por ti, por quem partiu<br>e por quem há de vir.</h2>
+      <p class="lead">Escolhe o teu valor acima, ou fala comigo se tiveres alguma dúvida.</p>
+      <a class="btn" href="#precos">Garantir o meu lugar</a>
+      <p class="lead" style="margin-top:14px"><a data-write href="#">ou escreve ao João pelo WhatsApp</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="sig">Paz e Bênçãos, João Carlos</div>
+    <p class="meta">João Carlos Paliteiro – Canal da Luz Divina<br>Instagram @joao_carlos_paliteiro</p>
+    <p class="meta">Trabalho espiritual de natureza complementar. Não substitui diagnóstico nem tratamento médico ou psicológico, nem garante resultados específicos.</p>
+    <p class="meta">© BEYOND — Academia de Evolução Divina · Todos os direitos reservados.</p>
+    <img src="logo-horizontal.png" alt="BEYOND">
+  </footer>
+</div>
+
+<script>
+/* Pagamento só por WhatsApp (MB WAY ou transferência; cartão/PayPal a pedido). Mesmo padrão da Inteireza v7. */
+const CURSO = "NÓS SOMOS · Linhagem Divina (29 out, 6 nov e 14 nov)";
+const WHATS = "351933416434";
+const wa = t => "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(t);
+const ext = (a,h) => { if(!a) return; a.href=h; a.target="_blank"; a.rel="noopener"; };
+(function(){
+  const now = new Date(); let open = false, firstSolo = null;
+  document.querySelectorAll("[data-grid]").forEach(grid=>{
+    let first = null;
+    grid.querySelectorAll(".price-card").forEach(card=>{
+      if (now > new Date(card.dataset.deadline)) { card.classList.add("expired"); return; }
+      if (!first) { first = card; card.classList.add("featured"); }
+      else { card.classList.add("later"); if (card.dataset.from) card.querySelector(".until").textContent = card.dataset.from; }
+      const n = card.dataset.name, p = card.dataset.price;
+      const combo = grid.dataset.grid === "combo";
+      ext(card.querySelector(".buy-btn"), wa("Olá João! Quero o meu lugar no Curso " + CURSO + (combo ? " junto com a Inteireza Divina" : "") + ", a " + p + " (" + n + "). Podes enviar-me os dados para pagar?"));
+    });
+    if (first) open = true;
+    if (grid.dataset.grid === "solo") firstSolo = first;
+  });
+  const p = firstSolo ? firstSolo.dataset.price : "";
+  if (!open) document.querySelector(".closed-msg").hidden = false;
+  ext(document.querySelector("[data-duo]"), wa("Olá João! Quero inscrever-me no Curso " + CURSO + " e trazer a minha família (paga metade)."));
+  ext(document.querySelector("[data-other]"), wa("Olá João! Quero inscrever-me no Curso " + CURSO + (p ? " (" + p + ")" : "") + ". Podes enviar-me os dados para pagar?"));
+  ext(document.querySelector("[data-write]"), wa("Olá João! Tenho uma pergunta sobre o Curso " + CURSO + "."));
+})();
+</script>
+<script src="pixel.js" defer></script>
+</body>
+</html>
