@@ -56,6 +56,7 @@
   .combo .pill{display:inline-block; font-family:Cinzel,Georgia,serif; font-weight:600; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--btn-ink); background:var(--gold); border-radius:999px; padding:6px 16px; margin:0 0 10px}
   .combo p{margin:0; font-family:"Cormorant Garamond",Georgia,serif; font-size:22px; line-height:1.3; color:var(--navy)}
   .combo-when{display:none}
+  .grp{display:block; margin:12px 0 0; font-weight:600; font-size:17px; color:var(--btn-ink); background:var(--btn); border-radius:999px; padding:14px 20px; text-decoration:none}
 </style>
 </head>
 <body>
@@ -82,6 +83,9 @@
       <p>Enviei-te agora um email com o link do Zoom e tudo o que precisas para o curso.</p>
       <p id="okcombo" style="display:none">Como escolheste os dois cursos, recebes também um email com o acesso à Inteireza Divina.</p>
       <p>Se não o vires dentro de 5 minutos, procura no Spam ou em Promoções.</p>
+      <p style="margin-top:18px">Entra também no grupo do curso, onde partilhamos os lembretes e caminhamos juntos:</p>
+      <a class="grp" href="https://chat.whatsapp.com/GpNt3EcYUl0Ki9I1wkxjd4" target="_blank" rel="noopener">🌳 Entrar no grupo do NÓS SOMOS</a>
+      <a class="grp" id="grpint" style="display:none" href="https://chat.whatsapp.com/EgfiXm1PGgrFBQ8s8hY3JG" target="_blank" rel="noopener">✨ Entrar no grupo da Inteireza</a>
     </div>
   </section>
 
@@ -126,7 +130,7 @@
     Promise.all(jobs).then(function(){
       f.style.display='none';
       document.getElementById('ok').style.display='block';
-      if(isCombo) document.getElementById('okcombo').style.display='block';
+      if(isCombo){ document.getElementById('okcombo').style.display='block'; document.getElementById('grpint').style.display='block'; }
     }).catch(function(){
       b.disabled=false; b.textContent=isCombo?'Quero receber os meus acessos':'Quero receber o meu acesso'; err.style.display='block';
     });
