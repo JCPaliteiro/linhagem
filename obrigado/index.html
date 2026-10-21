@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Obrigado · NÓS SOMOS · Linhagem Divina</title>
+<meta name="description" content="Obrigado por dizeres sim a ti e à tua família! Falta só um passo para receberes o teu acesso ao curso NÓS SOMOS · Linhagem Divina.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2E2454">
+<meta property="og:title" content="NÓS SOMOS · Recebe o teu acesso">
+<meta property="og:description" content="Falta só um passo: diz-me para onde envio o link do Zoom. 29 out · 6 nov · 14 nov.">
+<meta property="og:image" content="https://linhagem.joaopaliteiro.com/capa-v3.png">
+<meta property="og:locale" content="pt_PT">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#2E2454; --ink:#2A2018; --gold:#9C7A2E; --rose:#9A4F5E;
+    --cream:#FBF7F0; --card:#FFFDF7; --line:#E9DFCC; --btn:#2E2454; --btn-ink:#FFFDF7;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:Jost,"Segoe UI",system-ui,sans-serif; font-size:18px; line-height:1.6; color:var(--ink);
+    background:var(--cream);
+    background-image:
+      radial-gradient(ellipse 60% 40% at 85% 10%, rgba(232,190,200,.35), transparent 70%),
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(190,210,235,.35), transparent 70%),
+      radial-gradient(ellipse 50% 35% at 90% 85%, rgba(240,215,160,.35), transparent 70%);
+    min-height:100vh;
+  }
+  main{max-width:620px; margin:0 auto; padding:40px 16px 56px; text-align:center}
+  .logo{width:180px; height:auto; display:block; margin:0 auto 34px}
+  .eyebrow{font-family:Cinzel,Georgia,serif; font-weight:600; font-size:14px; letter-spacing:.18em; color:var(--gold); text-transform:uppercase; margin:0 0 18px}
+  .eyebrow::before,.eyebrow::after{content:"—"; margin:0 .6em; opacity:.6}
+  h1{font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-weight:500; color:var(--navy); font-size:clamp(40px,8vw,64px); line-height:1.08; margin:0 0 20px}
+  .lead{font-family:"Cormorant Garamond",Georgia,serif; font-size:22px; color:var(--navy); margin:0 0 32px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:22px; padding:28px 24px; text-align:left; box-shadow:0 18px 40px -28px rgba(46,36,84,.35)}
+  .card h2{font-family:Cinzel,Georgia,serif; font-weight:600; font-size:15px; letter-spacing:.12em; color:var(--navy); text-align:center; text-transform:uppercase; margin:0 0 20px}
+  label{display:block; font-size:15px; margin:0 0 6px; color:var(--ink)}
+  input{width:100%; font:inherit; font-size:17px; padding:13px 14px; border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 18px; color:var(--ink)}
+  input:focus{outline:2px solid rgba(46,36,84,.35); border-color:var(--navy)}
+  button{width:100%; font:inherit; font-weight:600; font-size:17px; color:var(--btn-ink); background:var(--btn); border:0; border-radius:999px; padding:15px 20px; cursor:pointer}
+  button[disabled]{opacity:.6; cursor:wait}
+  .hint{font-size:14px; color:#6b5e52; text-align:center; margin:14px 0 0}
+  .err{display:none; color:#9a2f3a; font-size:15px; text-align:center; margin:14px 0 0}
+  .ok{display:none; text-align:center}
+  .ok strong{font-family:"Cormorant Garamond",Georgia,serif; font-size:30px; color:var(--navy); display:block; margin-bottom:6px}
+  .when{margin:34px 0 0; font-size:16px; color:var(--navy)}
+  .when b{font-weight:600}
+  .bless{font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-size:22px; color:var(--navy); margin:30px 0 6px}
+  .sign{margin:0 0 36px}
+  footer{font-size:13px; color:#7a6d60}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="/logo-horizontal.png" alt="BEYOND — Academia de Evolução Divina">
+  <p class="eyebrow">NÓS SOMOS · Linhagem Divina</p>
+  <h1>Obrigado por dizeres sim<br>a ti e à tua família! 🤍</h1>
+  <p class="lead">O teu lugar está quase guardado.<br>Falta só um passo.</p>
+
+  <section class="card" aria-live="polite">
+    <form id="f" novalidate>
+      <h2>Para onde envio o teu acesso?</h2>
+      <label for="n">O teu nome</label>
+      <input id="n" name="fields[name]" type="text" autocomplete="name" required>
+      <label for="e">O teu email</label>
+      <input id="e" name="fields[email]" type="email" autocomplete="email" required>
+      <button id="b" type="submit">Quero receber o meu acesso</button>
+      <p class="hint">Usa, de preferência, o mesmo email com que pagaste.</p>
+      <p class="err" id="err">Não consegui enviar. Verifica o email e tenta outra vez, por favor.</p>
+    </form>
+    <div class="ok" id="ok">
+      <strong>Já está! ✨</strong>
+      <p>Enviei-te agora um email com o link do Zoom e tudo o que precisas para o curso.</p>
+      <p id="okcombo" style="display:none">Como escolheste os dois cursos, recebes também um email com o acesso à Inteireza Divina.</p>
+      <p>Se não o vires dentro de 5 minutos, procura no Spam ou em Promoções.</p>
+    </div>
+  </section>
+
+  <p class="when"><b>Qui 29 out · Sex 6 nov</b> · 19h30–22h30 (Lisboa) · 16h30 (Brasília)<br>
+  <b>Sáb 14 nov</b> · 14h30–20h30 (Lisboa) · 11h30 (Brasília)<br>Online, pelo Zoom</p>
+
+  <p class="bless">Vem por ti, por quem partiu e por quem há de vir.</p>
+  <p class="sign">Paz e Bênçãos,<br>João Carlos</p>
+
+  <footer>© 2026 João Carlos Paliteiro · BEYOND — Academia de Evolução Divina. Todos os direitos reservados.</footer>
+</main>
+<script src="/pixel.js" defer></script>
+<script>
+(function(){
+  var ACC='909226';
+  var FORM_LINHAGEM='201928139128964782';
+  var FORM_INTEIREZA='201326153594569770';
+  var isCombo=/(^|[?&])combo=1(&|$)/.test(location.search);
+  var f=document.getElementById('f'), b=document.getElementById('b'), err=document.getElementById('err');
+  function send(formId,name,email){
+    var d=new FormData();
+    d.append('fields[name]',name); d.append('fields[email]',email);
+    d.append('ml-submit','1'); d.append('anticsrf','true');
+    return fetch('https://assets.mailerlite.com/jsonp/'+ACC+'/forms/'+formId+'/subscribe',{method:'POST',body:d,mode:'no-cors'});
+  }
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault(); err.style.display='none';
+    var name=document.getElementById('n').value.trim(), email=document.getElementById('e').value.trim();
+    if(!name || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ err.style.display='block'; return; }
+    b.disabled=true; b.textContent='A enviar…';
+    var jobs=[send(FORM_LINHAGEM,name,email)];
+    if(isCombo) jobs.push(send(FORM_INTEIREZA,name,email));
+    Promise.all(jobs).then(function(){
+      f.style.display='none';
+      document.getElementById('ok').style.display='block';
+      if(isCombo) document.getElementById('okcombo').style.display='block';
+    }).catch(function(){
+      b.disabled=false; b.textContent='Quero receber o meu acesso'; err.style.display='block';
+    });
+  });
+})();
+</script>
+</body>
+</html>
