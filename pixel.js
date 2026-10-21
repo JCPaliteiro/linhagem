@@ -4,6 +4,7 @@
 (function () {
   var PIXEL_ID = "1471878896288549";
   var KEY = "jcp_cookies";
+  var NOME = /[?&]combo=1/.test(location.search) ? "NÓS SOMOS + Inteireza Divina (combo)" : "NÓS SOMOS · Linhagem Divina";
   function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
 
@@ -17,16 +18,16 @@
     fbq('init', PIXEL_ID);
     fbq('track', 'PageView');
     if (/\/obrigado\/?$/.test(location.pathname)) {
-      fbq('track', 'Purchase', { currency: 'EUR', value: 0, content_name: 'Inteireza Divina' });
+      fbq('track', 'Purchase', { currency: 'EUR', value: 0, content_name: NOME });
     }
   }
   function track(ev, data) { if (window.fbq) fbq('track', ev, data || {}); }
 
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href*="buy.stripe.com"], a.buy-btn');
-    if (a) track('InitiateCheckout', { currency: 'EUR', content_name: 'Inteireza Divina' });
+    if (a) track('InitiateCheckout', { currency: 'EUR', content_name: NOME });
   }, true);
-  document.addEventListener('submit', function () { track('CompleteRegistration', { content_name: 'Inteireza Divina' }); }, true);
+  document.addEventListener('submit', function () { track('CompleteRegistration', { content_name: NOME }); }, true);
 
   function banner() {
     var css = document.createElement('style');
