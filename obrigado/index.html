@@ -100,7 +100,9 @@
     var d=new FormData();
     d.append('fields[name]',name); d.append('fields[email]',email);
     d.append('ml-submit','1'); d.append('anticsrf','true');
-    return fetch('https://assets.mailerlite.com/jsonp/'+ACC+'/forms/'+formId+'/subscribe',{method:'POST',body:d,mode:'no-cors'});
+    return fetch('https://assets.mailerlite.com/jsonp/'+ACC+'/forms/'+formId+'/subscribe',{method:'POST',body:d})
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+      .then(function(j){ if(!j || j.success!==true) throw new Error('MailerLite'); });
   }
   f.addEventListener('submit',function(ev){
     ev.preventDefault(); err.style.display='none';
