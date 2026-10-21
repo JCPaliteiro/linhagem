@@ -31,7 +31,7 @@
 
   function banner() {
     var css = document.createElement('style');
-    css.textContent = '#jcp-ck{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:560px;margin:0 auto;background:#fffdf8;border:1px solid #e6d9be;border-radius:16px;box-shadow:0 12px 32px rgba(46,36,84,.18);padding:16px 18px;font:16px/1.5 "Jost","Segoe UI",system-ui,sans-serif;color:#2a2018}#jcp-ck p{margin:0 0 12px}#jcp-ck div{display:flex;gap:10px;flex-wrap:wrap}#jcp-ck button{font:inherit;font-weight:600;border-radius:999px;padding:10px 20px;cursor:pointer}#jcp-ck .ok{border:0;color:#fffdf7;background:linear-gradient(100deg,#4a3b7a,#2e2454)}#jcp-ck .no{border:1px solid #d9cdb3;background:transparent;color:#5f5446}';
+    css.textContent = '#jcp-ck{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:560px;margin:0 auto;background:#fffdf8;border:1px solid #e6d9be;border-radius:16px;box-shadow:0 12px 32px rgba(46,36,84,.18);padding:16px 18px;font:16px/1.5 "Jost","Segoe UI",system-ui,sans-serif;color:#2a2018}#jcp-ck p{margin:0 0 12px}#jcp-ck div{display:flex;gap:10px;flex-wrap:wrap}#jcp-ck button{font:inherit;font-weight:600;border-radius:999px;padding:10px 20px;cursor:pointer}#jcp-ck .ok{display:inline-block;border:0;color:#fffdf7;background:linear-gradient(100deg,#4a3b7a,#2e2454)}#jcp-ck .no{border:1px solid #d9cdb3;background:transparent;color:#5f5446}';
     document.head.appendChild(css);
     var d = document.createElement('div');
     d.id = 'jcp-ck'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Cookies');

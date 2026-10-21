@@ -52,6 +52,10 @@
   .bless{font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-size:22px; color:var(--navy); margin:30px 0 6px}
   .sign{margin:0 0 36px}
   footer{font-size:13px; color:#7a6d60}
+  .combo{display:none; margin:0 auto 26px; max-width:480px; background:var(--card); border:1.5px solid var(--gold); border-radius:18px; padding:16px 20px}
+  .combo .pill{display:inline-block; font-family:Cinzel,Georgia,serif; font-weight:600; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--btn-ink); background:var(--gold); border-radius:999px; padding:6px 16px; margin:0 0 10px}
+  .combo p{margin:0; font-family:"Cormorant Garamond",Georgia,serif; font-size:22px; line-height:1.3; color:var(--navy)}
+  .combo-when{display:none}
 </style>
 </head>
 <body>
@@ -59,6 +63,7 @@
   <img class="logo" src="/logo-horizontal.png" alt="BEYOND — Academia de Evolução Divina">
   <p class="eyebrow">NÓS SOMOS · Linhagem Divina</p>
   <h1>Obrigado por dizeres sim<br>a ti e à tua família! 🤍</h1>
+  <div class="combo" id="combo"><span class="pill">Combo · 2 cursos</span><p>NÓS SOMOS · Linhagem Divina<br>+ EU SOU · Inteireza Divina</p></div>
   <p class="lead">O teu lugar está quase guardado.<br>Falta só um passo.</p>
 
   <section class="card" aria-live="polite">
@@ -81,7 +86,8 @@
   </section>
 
   <p class="when"><b>Qui 29 out · Sex 6 nov</b> · 19h30–22h30 (Lisboa) · 16h30 (Brasília)<br>
-  <b>Sáb 14 nov</b> · 14h30–20h30 (Lisboa) · 11h30 (Brasília)<br>Online, pelo Zoom</p>
+  <b>Sáb 14 nov</b> · 14h30–20h30 (Lisboa) · 11h30 (Brasília)<br>
+  <span class="combo-when" id="combowhen"><b>Inteireza Divina · Sáb 24 out</b> · 14h30 (Lisboa) · 10h30 (Brasília)<br></span>Online, pelo Zoom</p>
 
   <p class="bless">Vem por ti, por quem partiu e por quem há de vir.</p>
   <p class="sign">Paz e Bênçãos,<br>João Carlos</p>
@@ -96,6 +102,12 @@
   var FORM_INTEIREZA='201326153594569770';
   var isCombo=/(^|[?&])combo=1(&|$)/.test(location.search);
   var f=document.getElementById('f'), b=document.getElementById('b'), err=document.getElementById('err');
+  if(isCombo){
+    document.getElementById('combo').style.display='block';
+    document.getElementById('combowhen').style.display='inline';
+    f.querySelector('h2').textContent='Para onde envio os teus 2 acessos?';
+    b.textContent='Quero receber os meus acessos';
+  }
   function send(formId,name,email){
     var d=new FormData();
     d.append('fields[name]',name); d.append('fields[email]',email);
@@ -116,7 +128,7 @@
       document.getElementById('ok').style.display='block';
       if(isCombo) document.getElementById('okcombo').style.display='block';
     }).catch(function(){
-      b.disabled=false; b.textContent='Quero receber o meu acesso'; err.style.display='block';
+      b.disabled=false; b.textContent=isCombo?'Quero receber os meus acessos':'Quero receber o meu acesso'; err.style.display='block';
     });
   });
 })();
