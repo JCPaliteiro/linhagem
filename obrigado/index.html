@@ -138,5 +138,15 @@
   });
 })();
 </script>
+<script>
+/* Porta: o formulário só aparece a quem chega do Stripe (session_id=cs_...). */
+(function(){
+  var ok=/[?&]session_id=cs_[A-Za-z0-9_]+/.test(location.search);
+  if(ok) return;
+  var l=document.querySelector(".lead"); if(l) l.style.display="none";
+  var box=document.getElementById('f');
+  if(box) box.innerHTML='<div style="text-align:center;padding:8px 4px"><p style="font-size:20px;margin:0 0 10px"><b>Esta página abre depois do pagamento.</b> 🤍</p><p style="margin:0 0 16px">Se já pagaste por MB WAY ou transferência, eu envio-te o acesso pessoalmente.</p><p style="margin:0"><a href="/" style="font-weight:600;color:inherit">Ver o curso e garantir o teu lugar</a></p></div>';
+})();
+</script>
 </body>
 </html>

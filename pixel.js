@@ -17,7 +17,7 @@
     }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', PIXEL_ID);
     fbq('track', 'PageView');
-    if (/\/obrigado\/?$/.test(location.pathname)) {
+    if (/\/obrigado\/?$/.test(location.pathname) && /[?&]session_id=cs_/.test(location.search)) {
       fbq('track', 'Purchase', { currency: 'EUR', value: 0, content_name: NOME });
     }
   }
