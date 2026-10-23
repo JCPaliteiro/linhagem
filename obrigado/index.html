@@ -141,7 +141,7 @@
 <script>
 /* Porta: o formulário só aparece a quem chega do Stripe (session_id=cs_...). */
 (function(){
-  var ok=/[?&]session_id=cs_[A-Za-z0-9_]+/.test(location.search);
+  var ok=/[?&]session_id=cs_[A-Za-z0-9_]+/.test(location.search)||/[?&]acesso=luz26(&|$)/.test(location.search); /* acesso=luz26: link manual para quem pagou por MB WAY/transferência */
   if(ok) return;
   var l=document.querySelector(".lead"); if(l) l.style.display="none";
   var box=document.getElementById('f');
